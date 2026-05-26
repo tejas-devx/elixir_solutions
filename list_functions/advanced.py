@@ -1,4 +1,12 @@
 #Sort list without using sort()
+lst = [8,7,6,5,4,3,2]
+for i in range(len(lst)):
+    for j in range(i+1,len(lst)):
+        if lst[i] > lst[j]:
+            t = lst[i]
+            lst[i] = lst[j]
+            lst[j] =t
+print(lst)
 
 #Find frequency of each element (use list + dictionary)
 numbers = [1, 2, 2, 3, 1, 4, 2]
